@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/scss/LoginStyle.min.css" rel="stylesheet" />
+    <title>Student Management System - Login</title>
+</head>
+<body>
+    <div class="container">
+        <form id="login-form">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+    const loginForm = document.getElementById('login-form');
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Simulate login (replace with actual login validation)
+            if (username === 'admin' && password === '12345') {
+                // Login successful
+                window.location.href = '/Admin/_HomePage'; // Redirect to AdminHomePage
+            } else {
+                alert('Invalid username or password!');
+            }
+        });</script>
+</body>
+</html>

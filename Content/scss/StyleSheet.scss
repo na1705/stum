@@ -1,0 +1,461 @@
+﻿   .img-fluid {
+        max-width: 100%;
+    }
+
+    .carousel-control-prev {
+        width: 5%;
+        color: black;
+        font-size: 20px;
+        width: 100px;
+    }
+
+    .carousel-control-next {
+        width: 5%;
+        color: black;
+        font-size: 20px;
+        width: 100px;
+    }
+
+
+    .body {
+        font-family: HelveticaNeue;
+    }
+
+    .container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .head {
+        align-items: center;
+        padding-bottom: 8px;
+        padding-top: 8px;
+
+
+        .formSearch {
+            width: 730px;
+        }
+
+        .navbar-collapse {
+            margin-left: 30px;
+            margin-right: 24px;
+        }
+
+        .navbar-expand-md {
+            padding: 0px;
+            justify-content: end;
+        }
+
+        .navbar-brand {
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+
+        .login {
+            color: #767676;
+            padding: 7px 27px 7px 27px;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            flex: none;
+        }
+    }
+
+    .menu {
+        box-shadow: 0 7px 7px -4px grey;
+
+        dropdown-item {
+            display: block;
+        }
+    }
+
+    .header {
+        background: #fff;
+        color: #333;
+        padding: 0px;
+    }
+
+    h5 {
+        margin-bottom: 32px;
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+        color: #333333;
+    }
+
+    .content {
+        padding: 16px;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1030;
+    }
+
+    .sticky + .content {
+        padding-top: 102px;
+    }
+
+    a.dropdown-item:hover {
+        background-color: midnightblue;
+        color: #fff;
+    }
+
+    .Footer {
+        background: url('../img/bg-footer.jpg');
+        font-size: 18px;
+        color: white;
+        padding: 0px;
+        line-height: 1.5;
+
+        .mainfooter {
+            padding-top: 40px;
+
+            .inf {
+                padding-bottom: 24px;
+
+                .col-12 col-md-4:nth-child(1) {
+                    padding-left: 20px;
+                }
+
+                .h1 .h2 {
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                    font-size: 24px;
+                }
+            }
+
+            .linksocial {
+                padding-bottom: 16px;
+                padding-top: 16px;
+                padding-left: 0px;
+                padding-right: 0px;
+                border-top: 1px solid #fff;
+
+                .links {
+                    display: flex;
+
+
+                    .textlink {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .stuMsocial {
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    .oursystem {
+        margin-bottom: 40px;
+        margin-top: 80px;
+
+        .system {
+            h6 {
+                font-size: 32px;
+                font-weight: 400;
+            }
+
+            .systemType {
+                position: relative;
+                height: 516px;
+                background-repeat: no-repeat;
+                border-radius: 4px;
+                color: #fff;
+                font-size: 16px;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .first {
+                padding-right: 20px;
+
+                .systemType:hover {
+                    background-image: url(https://fiinresearch.vn/img/Home/fiinservice1.png);
+                    filter: blur(0.7px) drop-shadow(5px 5px 4px black);
+                    color: #fff;
+                    -ms-transform: scale(1.05);
+                    -webkit-transform: scale(1.05);
+                    transform: scale(1.05);
+                }
+            }
+
+            .systemType {
+                background-image: url(https://fiinresearch.vn/img/Home/fiinservice1.png);
+            }
+        }
+
+        .btnright {
+            right: 0;
+            bottom: 0px;
+            position: absolute;
+            background-color: #0069a7;
+            padding: 12px 20px 12px 20px;
+            color: #fff;
+        }
+
+        .second {
+            padding-left: 10px;
+            padding-right: 10px;
+
+            .systemType:hover {
+                background-image: url(https://fiinresearch.vn/img/Home/fiinservice2.png);
+                filter: blur(0.7px) drop-shadow(5px 5px 4px black);
+                color: #fff;
+                -ms-transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+
+            .systemType {
+                background-image: url(https://fiinresearch.vn/img/Home/fiinservice2.png);
+            }
+        }
+
+        .third {
+            padding-left: 20px;
+
+            .systemType:hover {
+                background-image: url(https://fiinresearch.vn/img/Home/fiinservice2.png);
+                filter: blur(0.7px) drop-shadow(5px 5px 4px black);
+                color: #fff;
+                -ms-transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+
+            .systemType {
+                background-image: url(https://fiinresearch.vn/img/Home/fiinservice2.png);
+            }
+        }
+
+        .final {
+            padding-left: 30px;
+
+            .systemType:hover {
+                background-image: url(https://fiinresearch.vn/img/Home/fiinservice3.png);
+                filter: blur(0.7px) drop-shadow(5px 5px 4px black);
+                color: #fff;
+                -ms-transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+
+            .systemType {
+                background-image: url(https://fiinresearch.vn/img/Home/fiinservice3.png);
+            }
+        }
+    }
+
+    .lastestNews {
+        padding-bottom: 40px;
+        padding-top: 40px;
+        background-color: #f2f2f2;
+        color: #333333;
+
+        .titleReport {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        .navBar {
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: nowrap;
+
+            h7 {
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            .slides {
+                padding: 0px;
+            }
+
+            .carou {
+                color: #333333;
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                font-weight: 400;
+
+
+                .action {
+                    margin-left: 48px;
+                }
+            }
+        }
+
+        .slidelastestNews {
+            height: 480px;
+
+            .texthidden {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .texthidde {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .texthidd {
+                display: flex;
+                flex-direction: column;
+            }
+
+
+
+
+            .img {
+                width: 265px;
+                height: 200px;
+                border-radius: 4px;
+                margin-bottom: 8px;
+            }
+        }
+
+        .textdefault {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+    }
+
+    .introduce {
+        padding: 40px;
+    }
+
+    .educationalPhilosophy {
+        padding-bottom: 104px;
+        padding-top: 40px;
+        background-color: #f2f2f2;
+
+        h9 {
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .edu {
+            border-radius: 100%;
+            height: 165px;
+            width: 165px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        svg {
+            text-align: right;
+        }
+
+        .subtitle {
+            background-color: #fff;
+            border-radius: 4px;
+            z-index: 1;
+            box-shadow: 0 18px 18px -8px grey;
+            padding-bottom: 24px;
+            padding-top: 24px;
+            padding-left: 40px;
+        }
+
+        .description {
+            position: absolute;
+            background-color: #fff;
+            z-index: 0;
+            top: 90px;
+            border-radius: 4px;
+            box-shadow: 0 18px 18px -8px grey;
+            padding-left: 220px;
+            padding-right: 40px;
+            padding-bottom: 16px;
+            padding-top: 16px;
+        }
+
+        .describe {
+            font-size: 16px;
+        }
+    }
+
+    .subscribe {
+        background-image: url(https://fiinresearch.vn/img/Home/bgfooterfiinservice.png);
+        height: 250px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        font-weight: 500;
+        color: #fff;
+        font-size: 36px;
+
+
+        .sub {
+            border-radius: 4px;
+            background: #c01818;
+            color: #fff;
+            font-size: 50px;
+            margin-left: 36px;
+        }
+
+        .h10 {
+            margin: 0px;
+            line-height: 30px;
+        }
+    }
+.banner {
+    background-image: url( https://fiinresearch.vn/img/Store/bannerIndustry.png);
+    height: 300px;
+    background-position: center;
+
+    .titleReport {
+        font-size: 64px;
+        color: #fff;
+        font-weight: bold;
+        line-height: 56px;
+        text-align: center;
+    }
+}
+
+.tab-store {
+    .tab-label {
+        top: -45px;
+        margin: 0px;
+
+        .titleReports {
+            font-weight: 400;
+            font-size: 24px;
+        }
+
+        .typeStore {
+            font-weight: 400;
+            color: gray;
+            font-size: 24px;
+        }
+    }
+}
+
+.apply {
+    padding-top: 0px;
+    font-size: 16px;
+
+    .form-control {
+        padding: 6px 12px 6px 12px;
+    }
+}
+
+
+.addCss {
+    border-bottom: 4px;
+    border: solid;
+    border-bottom-color: blue;
+}
+
+      

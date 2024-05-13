@@ -1,0 +1,121 @@
+﻿.container {
+  padding-right: 0px;
+  padding-left: 0px; }
+
+.menu {
+  box-shadow: 0 7px 7px -4px grey; }
+  .menu dropdown-item {
+    display: block; }
+  .menu .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; }
+  .menu .sticky + .content {
+    padding-top: 102px; }
+  .menu a.dropdown-item:hover {
+    background-color: midnightblue;
+    color: #fff; }
+
+.header {
+  background: #fff;
+  color: #333;
+  padding: 0px; }
+
+.head {
+  align-items: center;
+  padding-bottom: 8px;
+  padding-top: 8px; }
+  .head .formSearch {
+    width: 600px; }
+  .head .navbar-collapse {
+    margin-left: 30px;
+    margin-right: 24px; }
+  .head .navbar-expand-md {
+    padding: 0px; }
+  .head .navbar-brand {
+    padding-bottom: 5px;
+    padding-top: 5px; }
+  .head .menu {
+    box-shadow: 0 7px 7px -4px grey; }
+    .head .menu dropdown-item {
+      display: block; }
+  .head .logout {
+    color: #767676;
+    padding: 7px 27px 7px 27px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    flex: none; }
+
+.button {
+  background-color: midnightblue;
+  border-color: midnightblue;
+  border-radius: 50px; }
+
+/*.Footer {
+    background: url('../img/bg-footer.jpg');
+    font-size: 18px;
+    color: white;
+    padding: 0px;
+    line-height: 1.5;
+
+    .mainfooter {
+        padding-top: 40px;
+
+        .inf {
+            padding-bottom: 24px;
+
+            .col-12 col-md-4:nth-child(1) {
+                padding-left: 20px;
+            }
+
+            .h1 .h2 {
+                font-weight: bold;
+                margin-bottom: 8px;
+                font-size: 24px;
+            }
+        }
+
+        .linksocial {
+            padding-bottom: 16px;
+            padding-top: 16px;
+            padding-left: 0px;
+            padding-right: 0px;
+            border-top: 1px solid #fff;
+
+            .links {
+                display: flex;
+
+
+                .textlink {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .stuMsocial {
+        display: flex;
+        justify-content: end;
+    }
+}
+*/
+.adminContainer {
+  max-width: 100%;
+  padding: 20px;
+  background-image: url("../img/bg.png");
+  height: 574px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+main {
+  text-align: center; }
+
+main h2 {
+  font-size: 20px;
+  margin-bottom: 10px; }
+
+main p {
+  line-height: 1.5; }

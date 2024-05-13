@@ -1,0 +1,18 @@
+﻿[
+  {
+    "outputFile": "Content/scss/stylesheet.css",
+    "inputFile": "Content/scss/stylesheet.scss"
+  },
+  {
+    "outputFile": "Content/scss/StyleSheet1.css",
+    "inputFile": "Content/scss/StyleSheet1.scss"
+  },
+  {
+    "outputFile": "Content/scss/StyleSheet2.css",
+    "inputFile": "Content/scss/StyleSheet2.scss"
+  },
+  {
+    "outputFile": "Content/scss/LoginStyle.css",
+    "inputFile": "Content/scss/LoginStyle.scss"
+  }
+]
