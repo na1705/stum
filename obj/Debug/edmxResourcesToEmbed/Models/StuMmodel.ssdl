@@ -19,7 +19,7 @@
     </Key>
     <Property Name="courseId" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="courseName" Type="nvarchar" MaxLength="128" />
-    <Property Name="lectureName" Type="nvarchar" MaxLength="128" />
+    <Property Name="lecturerName" Type="nvarchar" MaxLength="128" />
     <Property Name="day" Type="varchar" MaxLength="20" />
     <Property Name="time" Type="nvarchar" MaxLength="30" />
     <Property Name="location" Type="nvarchar" MaxLength="64" />
@@ -36,12 +36,12 @@ warning 6013: The table/view 'StuM.dbo.enrollment' does not have a primary key d
         </EntityType>-->
   <EntityType Name="student">
     <Key>
-      <PropertyRef Name="userId" />
+      <PropertyRef Name="studentId" />
     </Key>
-    <Property Name="userId" Type="int" Nullable="false" />
-    <Property Name="studentId" Type="varchar" MaxLength="30" />
+    <Property Name="studentId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userId" Type="int" />
     <Property Name="studentName" Type="nvarchar" MaxLength="128" />
-    <Property Name="gender" Type="varchar" MaxLength="10" />
+    <Property Name="gender" Type="nvarchar" MaxLength="10" />
     <Property Name="email" Type="varchar" MaxLength="64" />
     <Property Name="address" Type="nvarchar" MaxLength="128" />
     <Property Name="tel" Type="varchar" MaxLength="20" />
@@ -57,10 +57,28 @@ warning 6013: The table/view 'StuM.dbo.enrollment' does not have a primary key d
     <Property Name="password" Type="varchar" MaxLength="128" />
     <Property Name="role" Type="int" />
   </EntityType>
+  <Association Name="fk1">
+    <End Role="users" Type="Self.users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="student" Type="Self.student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="student">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="StuMModelStoreContainer">
     <EntitySet Name="admin" EntityType="Self.admin" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="course" EntityType="Self.course" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="student" EntityType="Self.student" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk1" Association="Self.fk1">
+      <End Role="users" EntitySet="users" />
+      <End Role="student" EntitySet="student" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

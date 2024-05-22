@@ -16,12 +16,15 @@
     <script src="~/Scripts/bootstrap.bundle.min.js"></script>
     <script src="~/Scripts/popper.min.js"></script>
     <title>Admin HomePage</title>
+    
+</head>
+<body>
     <div id="myHeader" class="header">
         <div class="head">
             <div class="container d-flex" style="padding-bottom: 8px; padding-top: 8px;">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" data-toggle="hidden" title="Student Management System" href="/">
-                        <img src="~/Content/img/LOGO.png" style=" width:200PX; height:40px;margin-right:16px;" />
+                        <img src="~/Content/img/LOGO.png" style="width:200PX; height:40px;margin-right:16px;" />
                     </a>
                     <div class="navbar-collapse" id="searchN">
                         <form class="formSearch">
@@ -61,10 +64,10 @@
                                     Student
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbardropdown" style="width:200px">
-                                    <a class="dropdown-item" href="/">Create new student</a>
-                                    <a class="dropdown-item" href="/">Search student</a>
+                                    <a class="dropdown-item" href="/students/Create">Create new student</a>
+                                    <a class="dropdown-item" href="/students/Search">Search student</a>
                                     <a class="dropdown-item" href="/">Update student details</a>
-                                    <a class="dropdown-item" href="/">Delete student</a>
+                                    <a class="dropdown-item" href="/students/Delete">Delete student</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown" actionname="Course">
@@ -72,10 +75,10 @@
                                     Course
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbardropdown" style="width:210px">
-                                    <a class="dropdown-item" href="/">Create course</a>
-                                    <a class="dropdown-item" href="/">Search course</a>
+                                    <a class="dropdown-item" href="/courses/Create">Create course</a>
+                                    <a class="dropdown-item" href="/courses/">Search course</a>
                                     <a class="dropdown-item" href="/">Update course details</a>
-                                    <a class="dropdown-item" href="/">Delete course</a>
+                                    <a class="dropdown-item" href="/courses/Delete">Delete course</a>
                                 </div>
                             </li>
                         </ul>
@@ -84,10 +87,8 @@
             </div>
         </div>
     </div>
-</head>
-<body>
     <div class="adminContainer">
-       
+
     </div>
     @*@Html.Partial("_FooterPage")*@
 </body>

@@ -20,7 +20,7 @@
         <MappingFragment StoreEntitySet="course">
           <ScalarProperty Name="courseId" ColumnName="courseId" />
           <ScalarProperty Name="courseName" ColumnName="courseName" />
-          <ScalarProperty Name="lectureName" ColumnName="lectureName" />
+          <ScalarProperty Name="lecturerName" ColumnName="lecturerName" />
           <ScalarProperty Name="day" ColumnName="day" />
           <ScalarProperty Name="time" ColumnName="time" />
           <ScalarProperty Name="location" ColumnName="location" />
@@ -30,8 +30,8 @@
     <EntitySetMapping Name="students">
       <EntityTypeMapping TypeName="StuMModel.student">
         <MappingFragment StoreEntitySet="student">
-          <ScalarProperty Name="userId" ColumnName="userId" />
           <ScalarProperty Name="studentId" ColumnName="studentId" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
           <ScalarProperty Name="studentName" ColumnName="studentName" />
           <ScalarProperty Name="gender" ColumnName="gender" />
           <ScalarProperty Name="email" ColumnName="email" />

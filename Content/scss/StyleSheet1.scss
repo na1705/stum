@@ -148,5 +148,30 @@
     main p {
         line-height: 1.5;
     }
+.createForm {
+    background-color: #d8dee1;
+    width: 600px;
+    display:grid;
 
+    .form-group {
+        display: flex;
+        margin-bottom: 20px;
+
+        .control-label {
+            padding-left: 80px;
+        }
+    }
+
+    .form-control {
+        width: 50%;
+    }
+
+    .form-group label {
+        width: 35%;
+        margin-right: 10px;
+    }
+
+    .form-group input {
+    }
+}
 
