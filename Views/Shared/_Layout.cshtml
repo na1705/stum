@@ -50,18 +50,6 @@
         function displayHome() {
             location.assign("//localhost:44302/Home");
         }
-        function addClass() {
-            var v = document.getElementById("dropdownStore");
-            v.classList.add("addCss");
-        }
-        $(document).ready(function () {
-            $("a").click(function () {
-                $.ajax({
-                    url: "/Store/MaReport", success: function (result) {
-                        $("#mA").html(result);
-                    }
-                });
-            });
-        });</script>
+    </script>
 </body>
 </html>

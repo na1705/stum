@@ -17,16 +17,16 @@ namespace StuMSystem.Controllers
         // GET: students
         public ActionResult Index()
         {
-            var students = db.students.Include(s => s.user);
-            return View(students.ToList());
+            var students = db.students.Include(s => s.user).ToList();
+            return View(students);
         }
 
         // GET: students/Search/5
-        public ActionResult Search(int id)
-        {
-            student student = db.students.Find(id);
-            return View(student);
-        }
+        /*        public ActionResult Search(int id)
+                {
+                    student student = db.students.Find(id);
+                    return View(student);
+                }*/
 
         // GET: students/Create
         public ActionResult Create()
@@ -110,6 +110,26 @@ namespace StuMSystem.Controllers
             db.students.Remove(student);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        
+        // GET: students/Search 
+        public ActionResult Search(string searchString)
+        {
+            // Kiểm tra xâu tìm kiếm không rỗng 
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                // Tìm sinh viên theo tên hoặc mã số sinh viên 
+                var students = db.students.Include(s => s.user)
+                                           .Where(s => s.studentName.Contains(searchString) || s.studentId.ToString().Contains(searchString));
+                return View(students.ToList());
+            }
+            else
+            {
+                // Nếu xâu tìm kiếm rỗng, hiển thị toàn bộ sinh viên 
+                var students = db.students.Include(s => s.user);
+                return View(students.ToList());
+            }
         }
 
         protected override void Dispose(bool disposing)

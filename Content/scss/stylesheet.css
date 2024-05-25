@@ -295,24 +295,8 @@ a.dropdown-item:hover {
     line-height: 56px;
     text-align: center; }
 
-.tab-store .tab-label {
-  top: -45px;
-  margin: 0px; }
-  .tab-store .tab-label .titleReports {
-    font-weight: 400;
-    font-size: 24px; }
-  .tab-store .tab-label .typeStore {
-    font-weight: 400;
-    color: gray;
-    font-size: 24px; }
-
 .apply {
   padding-top: 0px;
   font-size: 16px; }
   .apply .form-control {
     padding: 6px 12px 6px 12px; }
-
-.addCss {
-  border-bottom: 4px;
-  border: solid;
-  border-bottom-color: blue; }

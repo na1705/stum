@@ -561,9 +561,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AcademicController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MediaController.cs" />
     <Compile Include="Controllers\studentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -621,6 +624,9 @@
     <Content Include="Content\img\school.png" />
     <Content Include="Content\img\StuM %281%29.png" />
     <Content Include="Content\img\StuM %2810%29.png" />
+    <Content Include="Content\img\StuM %2812%29.png" />
+    <Content Include="Content\img\StuM %2813%29.png" />
+    <Content Include="Content\img\StuM %2814%29.png" />
     <Content Include="Content\img\StuM %282%29.png" />
     <Content Include="Content\img\StuM %288%29.png" />
     <Content Include="Content\scss\LoginStyle.css">
@@ -699,6 +705,15 @@
     <Content Include="Views\students\Create.cshtml" />
     <Content Include="Views\students\Search.cshtml" />
     <Content Include="Views\students\Index.cshtml" />
+    <Content Include="Views\Home\Admission.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\About\DevelopmentStrategy.cshtml" />
+    <Content Include="Views\Academic\Undergraduate.cshtml" />
+    <Content Include="Views\Academic\Graduate.cshtml" />
+    <Content Include="Views\Media\Photo.cshtml" />
+    <Content Include="Views\Media\Video.cshtml" />
+    <Content Include="Views\Home\Research.cshtml" />
+    <Content Include="Views\About\InformationOverview.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

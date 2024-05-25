@@ -1,4 +1,5 @@
-﻿@model StuMSystem.Models.student
+﻿@model IEnumerable<StuMSystem.Models.student>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,97 +68,74 @@
                     </ul>
                 </div>
             </nav>
+
         </div>
+
     </div>
+
 </div>
 <div class="searchStu" style="margin-top:20px;">
-    <div class="container" style="width:700px; display:flex;">
-        <div class="input-group mb-3">
-            <input type="text" id="search-term" class="form-control" placeholder="Search students...">
-            <button class="btn btn-default" type="submit">
-                <i class="fa fa-search"></i>
-            </button>
-        </div>
-        <button id="search-button" type="button" class="btn btn-link" style=" background-color: midnightblue; border-color: midnightblue; border-radius: 50px; margin-left: 30px; height: 40px;">
-            <a class="getAll" href="/students/Index" style="margin-right: 8px; color: #fff; font-weight:bold">All Students</a>
+    <div class="container" style="display: flex; justify-content: center;">
+        @using (Html.BeginForm("Search", "students", FormMethod.Get, new { @class = "searchForm", style = "margin-top:5px;" }))
+        {
+            <div class="input-group mb-3">
+                <input type="text" id="search-bar" name="searchString" placeholder="Search students..." style="width: 550px;">
+                <button class="btn btn-default" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        }
+        <button id="search-button" type="button" class="btn btn-link" style=" background-color: lightskyblue; border-color: midnightblue; border-radius: 50px; margin-left: 30px; height: 40px;">
+            <a class="getAll" href="/students/Index" style="margin-right: 8px; color: black; font-weight:bold">All Students</a>
         </button>
     </div>
 
 </div>
+<div class="List">
+    <div class="container" style="display: flex; justify-content: center;">
+        <table class="table">
+            <tr style="background-color:lightskyblue;">
+                <th>Student Name</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Tel</th>
+                <th>Major</th>
+                <th>Date of Birth</th>
+            </tr>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script>
+            @foreach (var item in Model)
+            {
+                <tr style="background-color:aliceblue;">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.studentName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.gender)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.tel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.major)
+                    </td>
+                    <td>
 
-</script>
-<div class="showInf">
-    <div class="container">
-        <dl class="dl-horizontal">
-            <dt>
-                @Html.DisplayNameFor(model => model.studentName)
-            </dt>
+                        @Html.DisplayFor(modelItem => item.dateofbirth)
+                    </td>
 
-            <dd>
-                @Html.DisplayFor(model => model.studentName)
-            </dd>
+                </tr>
+            }
 
-            <dt>
-                @Html.DisplayNameFor(model => model.gender)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.gender)
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.email)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.email)
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.address)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.address)
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.tel)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.tel)
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.major)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.major)
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.dateofbirth)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.dateofbirth)
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.user.userName)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.user.userName)
-            </dd>
-
-        </dl>
+        </table>
     </div>
-    
-
 </div>
+
+
+

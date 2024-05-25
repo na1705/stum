@@ -18,6 +18,20 @@ namespace StuMSystem
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+               name: "SearchStudent",
+               url: "students/Search",
+               defaults: new { controller = "Students", action = "Search" }
+           );
+
+            // Thêm route cho StudentsController
+            routes.MapRoute(
+                name: "CreateStudent",
+                url: "students/Create",
+                defaults: new { controller = "Students", action = "Create" }
+            );
+
         }
     }
 }

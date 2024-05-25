@@ -33,17 +33,16 @@
                     <div class="navbar-collapse navigation collapse" id="navbardropdown">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active" actionname="Home" onclick="displayHome()">
-                                <a class="nav-link" href="#" style="font-weight: bold; font-size: 18px; border-bottom: 4px solid rgb(0, 105, 167); color: rgb(51, 51, 51);">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="/" style="font-weight: bold; font-size: 18px; border-bottom: 4px solid rgb(0, 105, 167); color: rgb(51, 51, 51);">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item dropdown" actionname="About">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight:bold;font-size:18px;padding-top:8px;padding-bottom:10px;margin-left:15px;margin-right:15px;">
+                                <a class="nav-link dropdown-toggle" href="/" id="dropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight:bold;font-size:18px;padding-top:8px;padding-bottom:10px;margin-left:15px;margin-right:15px;">
                                     About
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbardropdown" style="width:200px">
+                                <div class="dropdown-menu" aria-labelledby="navbardropdown" style="width:220px">
                                     <a class="dropdown-item" href="/Home/Index">Mission & Vision</a>
-                                    <a class="dropdown-item" href="/Home/Index">Tuition</a>
-                                    <a class="dropdown-item" href="/Home/Index">Development strategy</a>
-                                    <a class="dropdown-item" href="/Home/Index">Quick Facts</a>
+                                    <a class="dropdown-item" href="/About/DevelopmentStrategy">Development Strategy</a>
+                                    <a class="dropdown-item" href="/About/InformationOverview">About the StuM University</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown" actionname="Academics">
@@ -51,24 +50,28 @@
                                     Academics
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbardropdown" style="width:210px">
-                                    <a class="dropdown-item" href="/Academics/Index">Undergraduate programs</a>
-                                    <a class="dropdown-item" href="/Academics/Index">Graduate programs</a>
+                                    <a class="dropdown-item" href="/Academic/Undergraduate">Undergraduate programs</a>
+                                    <a class="dropdown-item" href="/Academic/Graduate">Graduate programs</a>
                                 </div>
                             </li>
-                            <li class="nav-item" actionname="Event">
-                                <a class="nav-link disabled" href="#" style="font-weight:bold;font-size:18px;padding-top:8px;padding-bottom:10px;margin-left:15px;margin-right:15px;color:#767676;">Event</a>
+                            <li class="nav-item" actionname="Research">
+                                <a class="nav-link disabled" href="/Home/Research" style="font-weight:bold;font-size:18px;padding-top:8px;padding-bottom:10px;margin-left:15px;margin-right:15px;color:#767676;">Research</a>
                             </li>
                             <li class="nav-item dropdown" actionname="Media">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdownMedia" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight:bold;font-size:18px;padding-top:8px;padding-bottom:10px;margin-left:15px;margin-right:15px;">
                                     Media
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbardropdown" style="width:200px">
-                                    <a class="dropdown-item" href="/Media/Index">Photo gallery</a>
-                                    <a class="dropdown-item" href="Media/Index">Videos</a>
+                                    <a class="dropdown-item" href="/Media/Photo">Photo gallery</a>
+                                    <a class="dropdown-item" href="/Media/Video">Videos</a>
                                 </div>
                             </li>
                             <li class="nav-item" actionname="Contact">
-                                <a class="nav-link disabled" href="#" style="font-weight:bold;font-size:18px;padding-top:8px;padding-bottom:10px;margin-left:15px;margin-right:15px;color:#767676;">Contact</a>
+                                <a class="nav-link disabled" href="/Home/Contact" style="font-weight:bold;font-size:18px;padding-top:8px;padding-bottom:10px;margin-left:15px;margin-right:15px;color:#767676;">Contact
+                                </a>
+                            </li>
+                            <li class="nav-item" actionname="Admission">
+                                <a class="nav-link" style="font-weight:bold;font-size:18px;padding-top:8px;padding-bottom:10px;margin-left:15px;margin-right:15px;color:#767676;" href="/Home/Admission">Admission</a>
                             </li>
                         </ul>
                     </div>
